@@ -1,3 +1,3 @@
 # crackl
 
-Temporary online chats.
+Temporary online chat rooms.
