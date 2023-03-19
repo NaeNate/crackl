@@ -1,0 +1,13 @@
+.container {
+  background-color: beige;
+  margin: 2px;
+  padding: 12px;
+}
+
+.author {
+  font-size: 18px;
+}
+
+.date {
+  font-size: 12px;
+}

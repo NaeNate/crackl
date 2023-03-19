@@ -1,9 +1,9 @@
 "use client"
 
 import { addDoc, collection } from "firebase/firestore"
+import styles from "../../styles/Form.module.css"
 import { usePathname } from "next/navigation"
 import { FormEvent, useState } from "react"
-
 import { db } from "../../firebase"
 
 const Form = () => {
@@ -17,7 +17,7 @@ const Form = () => {
     const temp = message
     setMessage("")
 
-    await addDoc(collection(db, pathname.substring(1)), {
+    await addDoc(collection(db, pathname.substring(1).toLowerCase()), {
       message: temp,
       author: localStorage.getItem("name"),
       timestamp: Date.now(),
@@ -25,16 +25,18 @@ const Form = () => {
   }
 
   return (
-    <>
+    <div className={styles.container}>
       <form onSubmit={submit}>
         <input
           placeholder="Message"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
+          className={styles.message}
         />
-        <button>Submit</button>
+
+        <button className={styles.button}>Submit</button>
       </form>
-    </>
+    </div>
   )
 }
 

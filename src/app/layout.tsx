@@ -1,10 +1,13 @@
 import Link from "next/link"
-import "../styles/globals.css"
 import styles from "../styles/Layout.module.css"
+import "../styles/globals.css"
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang="en">
+      <head>
+        <title>Crackl</title>
+      </head>
       <body>
         <header>
           <h1 className={styles.header}>

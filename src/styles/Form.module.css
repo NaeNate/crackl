@@ -1,0 +1,25 @@
+.container {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.message,
+.button {
+  height: 40px;
+
+  font-size: 18px;
+
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.message {
+  width: 80%;
+
+  padding-left: 12px;
+}
+
+.button {
+  width: 20%;
+}

@@ -1,0 +1,30 @@
+.form {
+  text-align: center;
+}
+
+.error {
+  color: red;
+  margin: 10px;
+}
+
+.room,
+.name,
+.button {
+  height: 40px;
+
+  font-size: 18px;
+
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.room,
+.name {
+  width: 200px;
+
+  padding-left: 12px;
+}
+
+.button {
+  width: 80px;
+}

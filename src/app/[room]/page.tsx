@@ -4,8 +4,8 @@ import List from "./List"
 const Room = () => {
   return (
     <>
-      <List></List>
-      <Form></Form>
+      <List />
+      <Form />
     </>
   )
 }
