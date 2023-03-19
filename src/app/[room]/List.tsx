@@ -28,8 +28,6 @@ const List = () => {
     })
   }, [])
 
-  console.log(messages)
-
   return (
     <>
       {messages.map((message, i) => (
