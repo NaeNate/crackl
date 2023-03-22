@@ -1,13 +1,12 @@
 .container {
-  background-color: beige;
-  margin: 2px;
-  padding: 12px;
+  padding-left: 10px;
 }
 
 .author {
   font-size: 18px;
+  margin: 10px 0;
 }
 
-.date {
-  font-size: 12px;
+.text {
+  margin: 3px 0;
 }

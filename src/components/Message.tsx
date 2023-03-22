@@ -1,11 +1,14 @@
 import styles from "../styles/Message.module.css"
 
-const Message = ({ data }: any) => {
+const Message = ({ data, first }: any) => {
   return (
     <div className={styles.container}>
-      <span className={styles.author}>{data.author}</span>{" "}
-      <span className={styles.date}>DATE</span>
-      <p>{data.message}</p>
+      {first && (
+        <>
+          <p className={styles.author}>{data.author}</p>{" "}
+        </>
+      )}
+      <p className={styles.text}>{data.message}</p>
     </div>
   )
 }

@@ -28,9 +28,17 @@ const List = () => {
 
   return (
     <>
-      {messages.map((message, i) => (
-        <Message data={message} key={i} />
-      ))}
+      {messages.map((message, i) => {
+        let first = true
+
+        if (messages[i - 1]) {
+          if (messages[i - 1].author == message.author) {
+            first = false
+          }
+        }
+
+        return <Message data={message} first={first} key={i} />
+      })}
       <div
         style={{
           height: "40px",

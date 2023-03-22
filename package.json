@@ -1,13 +1,13 @@
 {
   "name": "crackl",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "clean": "rm -rf pnpm-lock.yaml node_modules/ .next/"
+    "clean": "rm -rf pnpm-lock.yaml node_modules .next"
   },
   "dependencies": {
     "firebase": "^9.18.0",
@@ -16,7 +16,7 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@types/node": "18.15.3",
+    "@types/node": "18.15.5",
     "@types/react": "18.0.28",
     "@types/react-dom": "18.0.11",
     "eslint": "8.36.0",
